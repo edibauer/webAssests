@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #000;
+    left: -200px;
+    transition: all 600ms linear;
+}
+
+#sidebar.sidebar__active {
+    left: 0;
+}
+
+.sidebar__item {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 13px;
+    list-style: none;
+}
+
+.sidebar__button {
+    position: absolute;
+    left: 230px;
+    top: 21px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #000;
+}
+
+.sidebar__btn {
+    display: block;
+    width: 27px;
+    text-align: center;
+    font-size: 27px;
+    color: white;
+}
